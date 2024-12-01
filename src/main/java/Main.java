@@ -13,8 +13,8 @@ System.out.print(inputList());
 zoogi(head);
 System.out.print(ex5(head,4));
 System.out.print(ex5B(head,4));
-System.out.print(deleteNode(head, 3);
-System.out.print(deleteNodeIndex(head, 3);
+System.out.print(deleteNode(head, 3));
+System.out.print(deleteNodeIndex(head, 3));
 }
 
 public static Node<Integer> ex1 (int []arr) {
@@ -96,6 +96,7 @@ public static Node<Integer> ex1 (int []arr) {
     }
     
     public static boolean ex5B(Node<Integer> head, int x) {
+    	Node<Integer> current = head;
         if (current == null) {
             return false; 
         }
@@ -105,7 +106,7 @@ public static Node<Integer> ex1 (int []arr) {
         return ex5B(current.getNext(), x);
     }
 
-  public  Node<Integer> deleteNode (Node <Integer> head, int x) {
+  public static  Node<Integer> deleteNode (Node <Integer> head, int x) {
   Node <Integer> p = new Node <Integer> (-1, head);
   head = p;
   while (p.hasNext()) {
@@ -121,7 +122,7 @@ public static Node<Integer> ex1 (int []arr) {
 return head.getNext();
 }
 
-  public Node<Integer> deleteNodeIndex(Node<Integer> head, int index) {
+  public static Node<Integer> deleteNodeIndex(Node<Integer> head, int index) {
     if (index < 0 || head == null) {
         return head;
     }
