@@ -140,4 +140,13 @@ return head.getNext();
     }
     return head;
 }
+	public static boolean ex8(Node<Integer> head, Node<Integer> head2) {
+        if (head == null && head2 == null) {
+            return true;
+        }
+        if (head == null || head2 == null || head.getValue() != head2.getValue()) {
+            return false;
+        }
+        return ex8(head.getNext(), head2.getNext());
+    }
 }
