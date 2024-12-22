@@ -174,7 +174,7 @@ public class Main {
     	}
     }
     
-    public static Node<Integer> ex10(Node<Integer> head, Node<Integer> head2, Node<Integer> head3, Node<Integer> p2) {
+   public static Node<Integer> ex10(Node<Integer> head, Node<Integer> head2, Node<Integer> head3, Node<Integer> p2) {
         Node<Integer> current = head3; 
 
         while (head != null) {
@@ -191,6 +191,4 @@ public class Main {
 
         return head3.getNext(); 
     }
-
 }
-
